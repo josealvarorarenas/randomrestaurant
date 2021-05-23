@@ -1,0 +1,1474 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'EB Garamond', serif;  
+    
+}
+
+.screen_fixed{
+    position: fixed;
+}
+
+#presentacion{
+    width: 90%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://www.hdnicewallpapers.com/Walls/Big/Food%20and%20Drinks/French_Fries_and_Meat_Burger_HD_Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+#texto_superior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 200px;
+    font-size: 30px;
+    color: white;
+    
+}
+
+#texto_superior a{
+    color: white;
+    text-decoration: none;
+}
+
+#texto_superior a:hover{
+    text-decoration: underline;
+}
+
+#logo{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    font-size: 20px;
+        
+}
+
+#presentacion hr{
+    margin-top: 80px;
+    width: 10%;
+    color: white;
+}
+
+#logo img{
+    width: 100%;
+}
+
+#texto_inferior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 50px;
+    color: white;
+}
+
+#separator{
+    width: 10%;
+    margin-top: 100px;
+}
+
+#texto_inferior span{
+        
+    padding-top: 50px;
+    
+}
+
+#texto_cuadro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    padding-top: 50px;
+    font-size: 20px;
+    
+    
+}
+
+#texto_cuadro span{
+    border: 1px solid white;
+    padding: 20px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+#texto_cuadro span:hover{
+
+    border: 1px solid white;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+hr{
+    width: 20%;
+    color: gray;
+    
+}
+
+#info_central{
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+
+#info_central .welcome{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.welcome span{
+    font-size: 50px;
+    color:rgb(31, 29, 29);
+}
+
+.welcome p{
+    width: 60%;
+    font-size: 30px;
+    color: rgb(170, 166, 166);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.welcome i{
+    font-size: 50px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    top: 0;
+    position: relative;
+}
+
+.welcome i:hover{
+    top: 20px;
+}
+
+#flecha i{
+    font-size: 50px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    top: 0;
+    position: relative;
+}
+#flecha i:hover{
+    top: 20px;
+}
+
+.boton_formulario{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 1855px;
+    position: absolute;
+    right: -550px;
+    
+    
+}
+
+.boton_formulario.menu_open{
+    right:-100px;
+}
+
+#texto_vertical{
+    width: 50px;
+    height: 280px;
+    background-color: orange;
+    color: blanchedalmond;
+    writing-mode: vertical-lr;
+    font-weight: 300;
+    font-family: 'EB Garamond', serif;
+    font-size: 25px; 
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+   
+}
+
+#texto_horizontal{
+    width: 450px;
+    height: 400px;
+    background-color: rgb(187, 169, 169);
+    font-family: 'EB Garamond', serif; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#texto_horizontal h1{
+    font-size: 25px;
+}
+
+#texto_horizontal form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+
+#imagenes{
+    width: 70%;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+#imagenes .bloque{
+    width: 50%;
+    height: 900px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.bloque_imageholder{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/gallery-item-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    
+}
+
+/* con estos atributos se puede conseguir el velo negro:
+
+    background-color:rgb(100,100,100);
+    background-blend-mode: soft-light; 
+
+    también con:
+    background:rgba(0,0,0,0.5)
+*/ 
+
+.bloque_imageholder:hover{
+    transform: scale(1.2);
+    filter: opacity(50%);
+   
+}
+
+#imagenes .mitad{
+    width: 50%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25px;
+    
+    
+}
+
+#imagenes .mitad #up{
+    width: 100%; 
+    height: 440px; 
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+          
+}
+
+.up_imageholder{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/gallery-item-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.up_imageholder:hover{
+    transform: scale(1.2);
+    filter: opacity(50%);
+}
+
+
+#imagenes .mitad #down{
+    width: 100%; 
+    height: 450px; 
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+          
+}
+
+.down_imageholder{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/gallery-item-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.down_imageholder:hover{
+    transform: scale(1.2);
+    filter: opacity(50%);
+}
+
+
+
+#info_detalle{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#info_detalle .parrafo{
+    width: 50%;
+    font-size: 30px;
+    color: rgb(165, 160, 160);
+    padding: 40px;
+    
+}
+
+#info_detalle .parrafo h2{
+    color:rgb(104, 102, 102) ;
+}
+
+.parrafo i{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#especialidades{
+    width: 70%;
+    height: 700px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#especialidades .plato{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: white;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#especialidades .plato p{
+    width: 60%;
+    height: 30%;
+    font-size: 35px;
+}
+
+#especialidades .plato span{
+    font-size: 55px;
+}
+
+.plato.steak{
+    background-image: url(https://livedemo00.template-help.com/landing_58125/images/dish-1-570x690.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.plato.fritto{
+    background-image: url(https://livedemo00.template-help.com/landing_58125/images/dish-2-570x690.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#menu{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#menu #our_menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    padding: 50px;
+    color: rgb(53, 52, 52);
+}
+
+
+#menu hr{
+    width: 10%;
+    margin-top: 100px;
+}
+
+#franja hr{
+    width: 5%;
+    margin: 0;
+}
+
+#menu #franja{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 25px;
+    color: gray
+}
+
+#carta{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#carta .principal{
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+
+#carta .principal p{
+    color: gray;
+}
+
+#carta .principal h1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-family: 'EB Garamond', serif; 
+    color: rgb(95, 92, 92);
+   
+}
+
+.principal span{
+    display: flex;
+}
+
+
+#book{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+    
+}
+
+#book span{
+    border: 1px solid black;
+    padding: 20px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+#book span:hover{
+
+    border: 1px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+#franja a{
+    color: grey;
+    text-decoration: none;
+}
+
+#franja a:hover{
+    color: black;
+}
+
+#imagenes_dos{
+    width: 70%;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+#imagenes_dos .bloque_dos{
+    width: 50%;
+    height: 900px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.bloque_dos_imageholder{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://livedemo00.template-help.com/landing_58125/images/dish-3-570x690.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    color: white;
+}
+
+.bloque_dos:hover .bloque_dos_imageholder{
+    transform: scale(1.2);
+    filter: opacity(50%);
+   
+}
+
+
+.bloque_dos #crespelle{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    
+}
+
+.bloque_dos #crespelle p{
+    width: 60%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.bloque_dos #crespelle span{
+    font-size: 50px;
+}
+
+#imagenes_dos .mitad_dos{
+    width: 50%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+}
+
+#imagenes_dos .mitad_dos #up_dos{
+    width: 100%; 
+    height: 440px; 
+    margin-bottom: 10px;
+    overflow: hidden;  
+    position: relative;      
+}
+
+.mitad_dos #up_dos #gnocchi{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 50px;
+    top:0;
+    left:0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 100px;
+    margin-left: 60px;
+       
+}
+
+.mitad_dos #down_dos #orange{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 46px;
+    top:0;
+    left:0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    padding: 50px;
+    margin-left: 45px;
+    margin-top: 50px;
+       
+}
+
+.up_dos_imageholder{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://livedemo00.template-help.com/landing_58125/images/dish-4-570x330.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+#up_dos:hover .up_dos_imageholder{
+    transform: scale(1.2);
+    filter: opacity(50%);
+}
+
+
+#imagenes_dos .mitad_dos #down_dos{
+    width: 100%; 
+    height: 450px; 
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+          
+}
+
+.down_dos_imageholder{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://livedemo00.template-help.com/landing_58125/images/dish-5-570x330.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+#down_dos:hover .down_dos_imageholder{
+    transform: scale(1.2);
+    filter: opacity(50%);
+}
+
+#texto_reservation{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+#reservation hr{
+    margin-top: 50px;
+    width: 5%;
+}
+
+
+
+#reservation #form_uno{
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+#reservation .submit{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#reservation .time_guests{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#form_uno input{
+    font-size: 22px;
+    color: gray;
+    font-style: normal;
+    font-family: 'EB Garamond', serif; 
+    width: 600px;
+    height: 60px;
+    margin: 10px;
+}
+
+input#date{
+    font-size: 22px;
+    color: gray;
+    font-style: normal;
+    font-family: 'EB Garamond', serif; 
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+}
+
+#reservation select{
+    width: 200px;
+    height: 60px;
+    color: gray;
+    font-style: normal;
+    font-family: 'EB Garamond', serif; 
+    font-size: 22px;
+}
+
+
+input#request{
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    color: black;
+    font-style: normal;
+    font-family: 'EB Garamond', serif; 
+    background-color: white;
+    
+}
+
+
+#map{
+    
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    
+}
+
+#map iframe{
+    width: 70%;
+    height: 400px;
+}
+
+footer #direccion{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 30px;
+    color: gray;
+}
+
+footer #social{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    font-size: 25px;
+    color: gray;
+}
+
+footer #social i{
+    padding: 10px;
+}
+
+footer #final{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 25px;
+    color: gray;
+    padding-bottom: 100px;
+}
+
+#social i:hover{
+    color: black;
+}
+
+@media (max-width:576px){
+    #presentacion{
+        width: 100%;
+        height: 800px;
+        margin-top: 0;
+    }
+
+    #texto_superior{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 65%;
+        padding-top: 100px;
+        font-size: 30px;
+    }
+
+    .boton_formulario{
+        margin-left: 0;
+    }
+
+    #logo{
+        width: 60%;
+        padding-top: 50px;
+    }
+
+    #texto_inferior{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #texto_inferior span{
+        padding: 10px;
+    }
+
+    #info_central{
+        width: 100%;
+        height: 280px;
+        padding-top: 200px;
+        padding-bottom: 200p;
+        
+    }
+
+    #imagenes{
+        flex-wrap: wrap;
+    }
+
+    #imagenes .mitad{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #imagenes .mitad #up{
+        width: 100%;
+        height: 200px;
+        
+    }
+
+    #imagenes .mitad #down{
+        width: 100%;
+        height: 200px;
+            }
+
+    #imagenes .bloque{
+        width: 100%;
+        height: 400px;
+    }
+
+    #imagenes .bloque{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .welcome p{
+        width: 90%;
+        font-size: 25px;
+    }
+
+    #info_detalle{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+
+    }
+
+    #info_detalle .parrafo{
+        width: 90%;
+        font-size: 25px;
+    }
+
+    #especialidades{
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #especialidades .plato{
+        width: 90%;
+        height: 60%;
+    }
+
+    #especialidades .plato span{
+        font-size: 25px;
+    }
+
+    #especialidades .plato p{
+        width: 90%;
+        height: 30%;
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    #carta{
+        width: 100%;
+    }
+
+    #carta .principal{
+        width: 90%;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    #book{
+        font-size: 25px;
+    }
+
+    #form_uno input{
+        width: 330px;
+        font-size: 20px;
+    }
+
+    #form_dos input{
+        width: 100px;
+    }
+
+    #map{
+        margin: 10px;
+        width: 100%;
+    }
+
+    #menu #franja{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imagenes_dos{
+        flex-wrap: wrap;
+    }
+
+    #imagenes_dos .mitad_dos{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #imagenes_dos .mitad_dos #up_dos{
+        width: 100%;
+        height: 200px;
+        
+    }
+
+    #imagenes_dos .mitad_dos #down_dos{
+        width: 100%;
+        height: 200px;
+            }
+
+    #imagenes_dos .bloque_dos{
+        width: 100%;
+        height: 400px;
+    }
+
+    #imagenes_dos .bloque_dos{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bloque_dos #crespelle span{
+        font-size: 30px;
+    }
+
+    .bloque_dos #crespelle p{
+        width: 90%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .bloque_dos #crespelle{
+        margin-top: 80px;
+    }
+
+    .mitad_dos #up_dos #gnocchi {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        padding: 70px;
+        margin-left: 50px;
+
+    }
+
+    .mitad_dos #down_dos #orange {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        padding: 10px;
+        margin-left: 60px;
+        
+    }
+
+    footer #direccion{
+        font-size: 20px;
+    }
+
+   
+}
+
+@media (min-width:577px) and (max-width: 768px){
+
+    #map iframe{
+        width: 90%;
+        height: 400px;
+    }
+
+    #form_uno input{
+        width: 400px;
+        font-size: 20px;
+    }
+
+    #form_dos input{
+        width: 125px;
+    }
+
+    #logo{
+        width: 50%;
+        padding-top: 30px;
+    }
+
+    #texto_superior{
+        padding-top: 50px;
+        font-size: 25px;
+    }
+
+    .boton_formulario{
+        margin-left: 0;
+    }
+
+    #texto_inferior{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #presentacion hr {
+        margin-top: 40px;
+        width: 10%;
+    
+    }
+
+    #presentacion{
+        height: 650px;
+    }
+
+    .welcome p {
+        width: 90%;
+        font-size: 22px;
+
+    }
+
+    #imagenes{
+        flex-wrap: wrap;
+    }
+
+    #imagenes .mitad{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #imagenes .mitad #up{
+        width: 100%;
+        height: 250px;
+        
+    }
+
+    #imagenes .mitad #down{
+        width: 100%;
+        height: 250px;
+            }
+
+    #imagenes .bloque{
+        width: 100%;
+        height: 300px;
+    }
+
+    #imagenes .bloque{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .welcome p{
+        width: 90%;
+        font-size: 25px;
+    }
+
+    #info_detalle{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+
+    }
+
+    #info_detalle .parrafo{
+        width: 90%;
+        font-size: 25px;
+    }
+
+    #especialidades{
+        width: 90%;
+        display: flex;
+        
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #especialidades .plato{
+        width: 95%;
+        height: 60%;
+        margin: 10px;
+        
+    }
+
+    #especialidades .plato span{
+        font-size: 25px;
+    }
+
+    #especialidades .plato p{
+        width: 70%;
+        height: 30%;
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    #carta{
+        width: 74%;
+    }
+
+    #carta .principal{
+        width: 80%;
+        font-size: 30px;
+        text-align: left;
+    }
+
+    #book{
+        font-size: 25px;
+    }
+
+    #menu #franja{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imagenes_dos{
+        flex-wrap: wrap;
+    }
+
+    #imagenes_dos .mitad_dos{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #imagenes_dos .mitad_dos #up_dos{
+        width: 100%;
+        height: 240px;
+        
+    }
+
+    #imagenes_dos .mitad_dos #down_dos{
+        width: 100%;
+        height: 240px;
+            }
+
+    #imagenes_dos .bloque_dos{
+        width: 100%;
+        height: 440px;
+    }
+
+    #imagenes_dos .bloque_dos{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bloque_dos #crespelle span{
+        font-size: 30px;
+    }
+
+    .bloque_dos #crespelle p{
+        width: 90%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .bloque_dos #crespelle{
+        margin-top: 80px;
+    }
+
+    .mitad_dos #up_dos #gnocchi {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        padding: 70px;
+        margin-left: 120px;
+
+    }
+
+    .mitad_dos #down_dos #orange {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        padding: 10px;
+        margin-left: 120px;
+        
+    }
+
+    footer #direccion{
+        font-size: 25px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1200px){
+
+    #map iframe{
+        width: 90%;
+        height: 400px;
+    }
+
+    #form_uno input{
+        width: 600px;
+        font-size: 20px;
+    }
+
+    #form_dos input{
+        width: 200px;
+    }
+
+    #logo{
+        width: 40%;
+        padding-top: 30px;
+    }
+
+    .boton_formulario{
+        margin-left: 0;
+    }
+
+    #texto_superior{
+        padding-top: 50px;
+        font-size: 25px;
+    }
+
+    #texto_inferior{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #presentacion hr {
+        margin-top: 40px;
+        width: 10%;
+    
+    }
+
+    #presentacion{
+        height: 650px;
+    }
+
+    .welcome p{
+        width: 95%;
+        font-size: 22px;
+
+    }
+
+    #imagenes .mitad #down{
+        height: 240px;
+
+    }
+
+    #imagenes .mitad #up{
+        height: 250px;
+
+    }
+
+    #imagenes .bloque{
+        height: 500px;
+
+    }
+
+    #imagenes{
+        height: 500px;
+    }
+
+
+
+    .welcome p{
+        width: 90%;
+        font-size: 25px;
+    }
+
+    #info_detalle{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+
+    }
+
+    #info_detalle .parrafo{
+        width: 90%;
+        font-size: 25px;
+    }
+
+   
+    #especialidades{
+        
+        height: 460px;
+        display: flex;
+        
+    }
+    
+    
+    #especialidades .plato{
+        width: 50%;        
+        display: flex;
+        
+    }
+
+    #especialidades .plato span{
+        font-size: 25px;
+    }
+
+    #especialidades .plato p {
+        width: 90%;
+        text-align: center;
+        font-size: 25px;
+
+    }
+
+    #menu{
+        width: 100%;
+    }
+
+    #carta{
+        width: 80%;
+    }
+
+    #carta .principal{
+        width: 50%;
+        font-size: 30px;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 23px;
+    }
+
+    #book{
+        font-size: 20px;
+    }
+
+    #menu #franja{
+        display: flex;
+        width: 65%;
+        font-size: 20px;
+        
+    }
+
+    #imagenes_dos .mitad_dos #down_dos{
+        height: 240px;
+
+    }
+
+    #imagenes_dos .mitad_dos #up_dos{
+        height: 250px;
+
+    }
+
+    #imagenes_dos .bloque_dos{
+        height: 500px;
+
+    }
+
+    #imagenes_dos{
+        height: 500px;
+    }
+
+    .bloque_dos #crespelle span{
+        font-size: 30px;
+    }
+
+    .bloque_dos #crespelle p{
+        width: 90%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .bloque_dos #crespelle{
+        margin-top: 80px;
+    }
+
+    .mitad_dos #up_dos #gnocchi {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        padding: 70px;
+        margin-left: 20px;
+
+    }
+
+    .mitad_dos #down_dos #orange {
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+        padding: 10px;
+        margin-left: 25px;
+        
+    }
+
+    footer #direccion{
+        font-size: 25px;
+    }
+}
